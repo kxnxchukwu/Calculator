@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+<div class= "container">
+
+ <input type="text" name="outputWindow" id="outputWindow" class="mx-auto" readonly>
+
+  <div class="row mx-auto">
+      <div class="col-3">
+        <button class="btn btn-lg btn-secondary btn-block" id="seven" value="7" onclick="getValue(document.getElementById('seven').value)">7</button>
+      </div>
+      <div class="col-3">
+        <button class="btn btn-lg btn-secondary btn-block" id="eight" value="8" onclick="getValue(document.getElementById('eight').value)">8</button>
+      </div>
+      <div class="col-3">
+            <button class="btn btn-lg btn-secondary btn-block" id="nine" value="9" onclick="getValue(document.getElementById('nine').value)">9</button>
+      </div>
+      <div class="col-3">
+            <button class="btn btn-lg btn-info btn-block" id="divide" value="/" onclick="getValue(document.getElementById('divide').value)">/</button>
+      </div>
+  </div>
+
+  <div class="row mx-auto">
+        <div class="col-3">
+          <button class="btn btn-lg btn-secondary btn-block" id="four" value="4" onclick="getValue(document.getElementById('four').value)">4</button>
+        </div>
+        <div class="col-3">
+              <button class="btn btn-lg btn-secondary btn-block" id="five" value="5" onclick="getValue(document.getElementById('five').value)">5</button>
+        </div>
+        <div class="col-3">
+              <button class="btn btn-lg btn-secondary btn-block" id="six" value="6" onclick="getValue(document.getElementById('six').value)">6</button>
+        </div>
+        <div class="col-3">
+              <button class="btn btn-lg btn-info btn-block" id="multiply" value="*" onclick="getValue(document.getElementById('multiply').value)">x</button>
+        </div>
+  </div>
+
+   <div class="row mx-auto">
+            <div class="col-3">
+              <button class="btn btn-lg btn-secondary btn-block" id="one" value="1" onclick="getValue(document.getElementById('one').value)">1</button>
+            </div>
+            <div class="col-3">
+                  <button class="btn btn-lg btn-secondary btn-block" id="two" value="2" onclick="getValue(document.getElementById('two').value)">2</button>
+            </div>
+            <div class="col-3">
+                  <button class="btn btn-lg btn-secondary btn-block" id="three" value="3" onclick="getValue(document.getElementById('three').value)">3</button>
+            </div>
+            <div class="col-3">
+                  <button class="btn btn-lg btn-info btn-block" id="minus" value="-" onclick="getValue(document.getElementById('minus').value)">-</button>
+            </div>
+   </div>
+
+   <div class="row mx-auto">
+            <div class="col-6">
+              <button class="btn btn-lg btn-secondary btn-block" id="zero" value="0" onclick="getValue(document.getElementById('zero').value)">0</button>
+            </div>
+            <div class="col-3">
+                  <button class="btn btn-lg btn-secondary btn-block" id="point" value="." onclick="getValue(document.getElementById('point').value)">.</button>
+            </div>
+            <div class="col-3">
+                  <button class="btn btn-lg btn-info btn-block" id="plus" value="+" onclick="getValue(document.getElementById('plus').value)">+</button>
+            </div>
+   </div>
+
+   <div class="row mx-auto">
+        <div class="col-3">
+          <button class="btn btn-lg btn-info btn-block" id="modulus" value="%" onclick="getValue(document.getElementById('modulus').value)">%</button>
+        </div>
+        <div class="col-3">
+              <button type="submit" class="btn btn-lg btn-danger btn-block" onclick="clearIt()">CLEAR</button>
+        </div>
+        <div class="col-6">
+              <button class="btn btn-lg btn-warning btn-block" id="equal" value="=" onclick="calculateResult()">=</button>
+        </div>
+   </div>
+
+</div>
+
+<script src= "script.js"></script>
+</body>
+</html>
