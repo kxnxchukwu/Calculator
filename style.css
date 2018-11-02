@@ -1,0 +1,39 @@
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, :after, :before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+body, html {
+    background-color: #fff;
+    width: 100%
+}
+.container{
+    width: 700px;
+    height: 380px;
+    margin: 60px auto;
+    position: relative;
+    background-color: silver;
+}
+
+input {
+   position: absolute;
+   left: 74px;
+   top: 15px;  
+   width: 580px;
+   height: 60px;
+}
+
+button {
+    position: absolute;
+    top: 85px;
+    
+ }
+
+div .row {
+    width: 580px;
+    padding-bottom: 55px;
+}
